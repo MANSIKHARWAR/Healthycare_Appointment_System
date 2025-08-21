@@ -1,0 +1,179 @@
+/* ================================
+   General
+================================ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f6fa;
+}
+
+/* ================================
+   Hero Section
+================================ */
+.hero {
+    /* width: 100%; */
+    height: 100vh;
+    background: url('https://plus.unsplash.com/premium_photo-1673953509975-576678fa6710?q=80&w=1170&auto=format&fit=crop') 
+                no-repeat center center / cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to left */
+    padding-left: 8%; /* Add left spacing */
+    text-align: left; /* Align text to left */
+    color: white;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 0;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-text a {
+    display: inline-block;
+    background: #009688;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.hero-text a:hover {
+    background: #00695c;
+    transform: translateY(-3px);
+}
+
+
+/* ================================
+   Features Section
+================================ */
+.features {
+    padding: 60px 40px;
+    background: #fff;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Single row, equal spacing */
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* Each card adapts */
+.feature-card {
+    flex: 1; /* Equal width */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.feature-card img {
+    margin-bottom: 15px;
+}
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.feature-card p {
+    font-size: 15px;
+    color: #555;
+}
+
+
+/* ================================
+   Testimonials Section
+================================ */
+.testimonials {
+    background: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+}
+.testimonials h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #00695c;
+}
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+.testimonial-card:nth-child(2) { animation-delay: 0.2s; }
+.testimonial-card:nth-child(3) { animation-delay: 0.4s; }
+.testimonial-card:hover { transform: translateY(-10px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); }
+.testimonial-card p { font-size: 16px; font-style: italic; line-height: 1.6; color: #333; margin-bottom: 20px; }
+.testimonial-card h4 { font-size: 18px; font-weight: 600; color: #00695c; }
+
+/* ================================
+   Footer (already in footer.css)
+================================ */
+
+/* ================================
+   Animations
+================================ */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================
+   Responsive
+================================ */
+@media (max-width: 768px) {
+    .hero-text h1 { font-size: 34px; }
+    .hero-text p { font-size: 16px; }
+    .features { padding: 40px 20px; }
+}

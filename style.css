@@ -1,0 +1,257 @@
+/* =======================
+   GLOBAL STYLES
+======================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* =======================
+   FORM CONTAINER
+======================= */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* =======================
+   FORM ELEMENTS
+======================= */
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+form input[type="submit"],
+button, 
+.btn {
+    background: #3498db;
+    border: none;
+    padding: 10px 18px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+form input[type="submit"]:hover,
+button:hover, 
+.btn:hover {
+    background: #2980b9;
+}
+
+/* =======================
+   TABLE STYLING
+======================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #3498db;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+/* =======================
+   DASHBOARD CARD
+======================= */
+body.dashboard-bg {
+    background: url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.dashboard-card {
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+
+.dashboard-card h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.dashboard-card a button {
+    width: 80%;
+    margin: 10px 0;
+}
+
+/* =======================
+   NAVBAR
+======================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #009688, #00695c);
+    padding: 12px 30px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-logo img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.nav-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c8e6c9;
+}
+
+.nav-links .register-btn {
+    background: #ffffff;
+    color: #00695c;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    border: 2px solid #ffffff;
+    margin-left: 10px;
+}
+
+.nav-links .register-btn:hover {
+    background: #004d40;
+    color: white;
+    border: 2px solid #004d40;
+}
+
+/* =======================
+   TESTIMONIALS
+======================= */
+.testimonials {
+    background: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #00695c;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.testimonial-card:nth-child(2) { animation-delay: 0.2s; }
+.testimonial-card:nth-child(3) { animation-delay: 0.4s; }
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #00695c;
+}
+
+/* Fade-In Animation */
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    table, th, td {
+        font-size: 14px;
+    }
+    button, .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

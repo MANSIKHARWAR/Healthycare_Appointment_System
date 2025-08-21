@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #009688, #00695c);
+    padding: 12px 30px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.nav-logo img { width: 45px; margin-right: 10px; }
+.nav-title { font-size: 20px; font-weight: bold; color: white; }
+.nav-links a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-links a:hover { color: #c8e6c9; }
+.nav-links .register-btn {
+    background: #ffffff;
+    color: #00695c;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    border: 2px solid #ffffff;
+    margin-left: 10px;
+}
+.nav-links .register-btn:hover {
+    background: #004d40;
+    color: white;
+    border: 2px solid #004d40;
+}

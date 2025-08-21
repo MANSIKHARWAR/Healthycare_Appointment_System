@@ -1,0 +1,116 @@
+/* Footer Styling */
+.footer {
+    background: linear-gradient(90deg, #009688, #00695c); /* Same as navbar */
+    color: white;
+    padding: 40px 20px 20px;
+    margin-top: auto; /* Helps footer push to bottom when using flex layout */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Footer Layout */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+/* About Section */
+.footer-about {
+    flex: 1;
+    min-width: 250px;
+}
+.footer-about img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+.footer-about h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.footer-about p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Quick Links */
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+}
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 6px 0;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    color: #c8e6c9;
+    padding-left: 4px;
+}
+
+/* Social Media */
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+.footer-social h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.social-icons a img {
+    width: 30px;
+    margin: 0 8px 8px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.social-icons a img:hover {
+    transform: scale(1.15);
+    opacity: 0.9;
+}
+
+/* Copyright */
+.footer-copy {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .footer-links, 
+    .footer-social {
+        margin-top: 20px;
+    }
+}
+
+/* Sticky Footer Support for Short Pages */
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
