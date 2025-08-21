@@ -46,4 +46,4 @@ Through this project, I enhanced my **UI/UX design skills** by:
 - Multi-language support for wider accessibility  
 
 --- 
-- 💼 **LinkedIn:** [https://linkedin.com/in/your-profile](https://www.linkedin.com/in/mansi-kharwar-467aa828b/))  
+- 💼 **LinkedIn:** [https://linkedin.com/in/my-profile](https://www.linkedin.com/in/mansi-kharwar-467aa828b/))  
